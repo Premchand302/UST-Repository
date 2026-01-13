@@ -1,0 +1,19 @@
+package assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Assignment_15 {
+	public static void main(String[] args) {
+		List<Integer> l = new ArrayList<>();
+		l.add(4);
+		l.add(12);
+		l.add(56);
+		l.add(2);
+		l.add(1);
+		Object[] arr = l.toArray();
+		for(Object i : arr) {
+			System.out.println(i);
+		}
+	}
+}

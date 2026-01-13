@@ -1,0 +1,6 @@
+public class DataService {
+
+    public boolean isDataPresent() {
+        return true;   // data is present
+    }
+}

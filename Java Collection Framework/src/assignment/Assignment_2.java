@@ -1,0 +1,17 @@
+package assignment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Assignment_2 {
+	public static void main(String[] args) {
+		List<Integer> l = new ArrayList<>();
+		l.add(4);
+		l.add(12);
+		l.add(56);
+		l.add(2);
+		l.add(1);
+		l.remove(3);
+		System.out.println(l);
+	}
+}

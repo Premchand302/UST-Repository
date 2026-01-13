@@ -1,0 +1,11 @@
+package com;
+import org.junit.Test;
+
+public class AgeValidatorTest {
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testInvalidAge() {
+        AgeValidator validator = new AgeValidator();
+        validator.validateAge(-5);
+        }
+}

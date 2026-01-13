@@ -1,0 +1,24 @@
+package assignment;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Assignment_8 {
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new FileReader("students.csv"));
+		FileWriter fw = new FileWriter("passed_students.csv");
+		br.readLine();
+		fw.write("id,name,marks\n");
+		String line;
+		while((line= br.readLine()) != null) {
+			System.out.println(line);
+			String[] data = line.split(",");
+			int marks = Integer.parseInt(data[2]);
+			if(marks >= 50) {
+				fw.write(line);
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+package assignment;
+
+class UserValidationService {
+    public static void validateUser(int age, String email) throws InvalidAgeException, InvalidEmailException {
+        if (age < 18) {
+            throw new InvalidAgeException("Age must be 18 or above.");
+        }
+        if (email == null || !email.contains("@")) {
+            throw new InvalidEmailException("Invalid email format.");
+        }
+
+        System.out.println("User validation successful.");
+    }
+}
+public class Assignment_12 {
+	 public static void main(String[] args) {
+	        int age = 16;
+	        String email = "testmail.com";
+	        try {
+	            UserValidationService.validateUser(age, email);
+
+	        } catch (InvalidAgeException e) {
+	            System.out.println("Age Error: " + e.getMessage());
+
+	        } catch (InvalidEmailException e) {
+	            System.out.println("Email Error: " + e.getMessage());
+	        }
+	    }
+}

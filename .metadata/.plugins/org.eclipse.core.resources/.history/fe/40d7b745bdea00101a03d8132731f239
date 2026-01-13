@@ -1,0 +1,17 @@
+package com;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CountryServiceTest {
+
+    @Test
+    public void testDefaultCountryCode() {
+
+        CountryService service = new CountryService();
+
+        String code = service.getDefaultCountryCode();
+
+        assertEquals("IN", code);   // country code should match
+    }
+}

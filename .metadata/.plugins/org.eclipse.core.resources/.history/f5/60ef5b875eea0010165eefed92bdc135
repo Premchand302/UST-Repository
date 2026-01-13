@@ -1,0 +1,17 @@
+package assignment;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Assignment_1 {
+	public static void main(String[] args) throws IOException{
+		FileWriter writer = new FileWriter("students.csv");
+		writer.write("id,name,marks\n");
+		writer.write("101,Ravi,34\n");
+		writer.write("102,Athuu,56");
+		
+		writer.close();
+		
+		
+	}
+}

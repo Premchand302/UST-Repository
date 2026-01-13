@@ -1,0 +1,18 @@
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class ArrayServiceTest {
+
+    @Test
+    public void testArrayContainsValue() {
+
+        int[] numbers = {10, 20, 30, 40};
+
+        ArrayService service = new ArrayService();
+
+        boolean result = service.contains(numbers, 30);
+
+        assertTrue(result);   // value exists in array
+    }
+}

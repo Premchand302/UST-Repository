@@ -1,0 +1,15 @@
+package com;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UppercaseTest {
+	Uppercase u = new Uppercase();
+	@Test
+	public void uppercaseTest(){
+		String result = u.toUpper("Java");
+		assertEquals("JAVA",result);	
+	}
+
+}

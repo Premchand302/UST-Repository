@@ -1,0 +1,20 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Assignment_7 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter age:");
+		int age = sc.nextInt();
+		try {
+			if(age < 18) {
+				throw new Exception("Age not eligible");
+			}
+			System.out.println("Age is eligible");
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}
