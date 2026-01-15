@@ -1,6 +1,0 @@
-public class GreetingService {
-
-    public String getGreeting(String username) {
-        return "Welcome, User";
-    }
-}
